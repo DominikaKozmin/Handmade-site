@@ -1,0 +1,183 @@
+/*General settings*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Kaisei Tokumin', serif;
+    background-color: #18140e;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    color: white;
+}
+
+/*Navigation*/
+nav {
+    background-color:  #18140e;
+    position: fixed;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-logo {
+    font-weight: 700;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+nav .container {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.nav-links a {
+    transition: .5s all;
+}
+
+.nav-links a:hover {
+    transform: scale(1.1);
+}
+
+/*landing page*/
+.landing-page {
+    height: 100vh;
+    background-image: url("/img/bg.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+.lp-shadow {
+    height: 100%;
+    background-color: rgba(0,0,0, .4);
+}
+
+.lp-shadow .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.lp-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 25%;
+}
+
+.lp-text h1 {
+    font-size: 40px;
+}
+
+.lp-text h2 {
+    font-size: 25px;
+}
+
+.lp-text button {
+    background: none;
+    padding: 5px 10px;
+    border: 3px solid white;
+    border-radius: 14px;
+    color: white;
+    font-size: 15px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.lp-text button:hover {
+    background-color: white;
+    color: black;
+}
+
+/*Gallery*/
+.offer {
+    background-color: #18140e;
+    color: black;
+    padding: 5% 0;
+}
+
+.offer h1 {
+    margin-bottom: 50px;
+    color: white;
+}
+
+.offer h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.offer h3 {
+    font-size: 12px;
+}
+
+.offer-list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.offer-box {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    height: 200px;
+    background-color: wheat;
+    flex-direction: column;
+}
+
+.offer-box:nth-of-type(3n) {
+    margin-right: 0;
+
+}
+
+/*Footer*/
+footer {
+    background-color: #0e0b08;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.foo-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .container {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
